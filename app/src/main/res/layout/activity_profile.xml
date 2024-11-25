@@ -20,11 +20,30 @@
         android:textSize="16sp"
         android:textColor="#666666" />
 
+    <TextView
+        android:id="@+id/reservedRoomsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userEmail"
+        android:layout_marginTop="20dp"
+        android:text="Reserved Rooms"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reservedRoomsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservedRoomsTitle"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
     <Button
         android:id="@+id/editProfileButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userEmail"
+        android:layout_below="@id/reservedRoomsRecyclerView"
         android:layout_marginTop="20dp"
         android:text="Edit Profile" />
 

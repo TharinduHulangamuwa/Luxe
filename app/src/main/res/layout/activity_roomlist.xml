@@ -15,10 +15,20 @@
         android:textColor="@android:color/black"
         android:layout_marginBottom="20dp" />
 
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchRoomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search rooms"
+        android:layout_below="@id/roomTitle"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/roomTitle"
+        android:layout_below="@id/searchRoomEditText"
         android:scrollbars="none">
 
         <LinearLayout
@@ -185,7 +195,7 @@
             android:id="@+id/cartIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParent Right="true"
+            android:layout_alignParentRight="true"
             android:layout_marginRight="32dp"
             android:contentDescription="Cart Icon"
             android:src="@drawable/basket" />

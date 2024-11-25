@@ -1,129 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:layout_above="@id/bottom_navigation">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
 
-        <RelativeLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to MyPupCare"
+            android:textSize="24sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/selectRoomButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="Select Hotel Room" />
 
-            <!-- Header Image or Banner -->
-            <ImageView
-                android:id="@+id/headerImage"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/header_image" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
 
-            <!-- Welcome Message -->
-            <TextView
-                android:id="@+id/welcomeMessage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:layout_below="@id/headerImage"
-                android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore our services"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
 
-            <!-- Featured Section -->
-            <TextView
-                android:id="@+id/featuredTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Featured"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_below="@id/welcomeMessage"
-                android:layout_marginTop="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/featuredTitle"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:id="@+id/featuredImage1"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/featured_image1" />
-
-                <ImageView
-                    android:id="@+id/featuredImage2"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/featured_image2" />
-
-                <ImageView
-                    android:id="@+id/featuredImage3"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/featured_image3" />
-            </LinearLayout>
-
-            <!-- Promotional Banner -->
-            <TextView
-                android:id="@+id/promotionalBanner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
-                android:text="Special Offer: 20% off on Room Bookings!"
-                android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_below="@id/featuredImage1"
-                android:layout_marginTop="20dp" />
-
-            <!-- Button Section -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/promotionalBanner"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
-
-                <Button
-                    android:id="@+id/roomBookingButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Room Booking" />
-
-                <Button
-                    android:id="@+id/serviceReservationsButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Service Reservations" />
-
-                <Button
-                    android:id="@+id/hotelOffersButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hotel Offers" />
-
-                <Button
-                    android:id="@+id/localAttractionsButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Local Attractions" />
-            </LinearLayout>
-
-            <!-- ViewPager for Image Slider -->
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:
+    </LinearLayout>
+</RelativeLayout>
