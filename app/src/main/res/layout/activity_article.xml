@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <!-- Cart Label and Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@drawable/blue_background">
+
+        <TextView
+            android:id="@+id/article_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Articles"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="10dp" />
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/educational" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="120dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Article 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                cardview:cardCornerRadius="8dp"
+                cardview:cardBackgroundColor="@color/article">
+
+                <LinearLayout
+                    android:id="@+id/article1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Why Choose LuxeVista Resort for Your Next Getaway? "
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotel1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At LuxeVista, every room is designed to exude elegance and comfort. From spacious ocean-view suites to cozy deluxe rooms, each space is thoughtfully curated with premium furnishings and modern amenities. With options for private balconies, spa-like bathrooms, and personalized room services, LuxeVista ensures your stay feels like a home away from home.  " />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Article 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                cardview:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/article2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="1. A Paradise by the Ocean "
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/hotel3"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Imagine waking up to the soothing sound of waves and enjoying uninterrupted views of the ocean from your private suite. LuxeVista Resort is situated on one of the most picturesque beaches, providing guests with direct access to golden sands and crystal-clear waters. Whether you’re lounging by the shore or indulging in water sports, LuxeVista’s prime location makes it a haven for beach lovers.  " />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Article 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                cardview:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/article3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="2. Luxurious Accommodations"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/hotel4"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At LuxeVista, every room is designed to exude elegance and comfort. From spacious ocean-view suites to cozy deluxe rooms, each space is thoughtfully curated with premium furnishings and modern amenities. With options for private balconies, spa-like bathrooms, and personalized room services, LuxeVista ensures your stay feels like a home away from home.  " />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_background"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/bookIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32dp"
+            android:contentDescription="Book Icon"
+            android:src="@drawable/educational" />
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="Home Icon"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:contentDescription="Cart Icon"
+            android:src="@drawable/basket" />
+    </RelativeLayout>
+</RelativeLayout>

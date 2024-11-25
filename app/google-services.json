@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862874385921",
+    "project_id": "dognutritionapp-7fa12",
+    "storage_bucket": "dognutritionapp-7fa12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862874385921:android:7096f1e4822fb4c61e8a00",
+        "android_client_info": {
+          "package_name": "com.example.mypupcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMooqsqCBhGG6CbSOrk3srM2uv6LCxs2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

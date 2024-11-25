@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".CartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Cart Label and Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="20dp"
+            android:background="@drawable/blue_background">
+
+            <TextView
+                android:id="@+id/cart_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Booking"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/cart_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/basket" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/orders_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:background="@color/material_dynamic_primary80"
+                android:text="Reserve"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Items List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:itemCount="2" />
+
+        <!-- Total Price TextView -->
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total Price: $0.00"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="end"
+            android:padding="10dp"/>
+
+        <!-- Checkout Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/checkout_background_selector"
+            android:text="Checkout"
+            android:textColor="@android:color/black"/>
+
+
+
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_background">
+
+        <ImageView
+            android:id="@+id/bookIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32dp"
+            android:contentDescription="Book Icon"
+            android:src="@drawable/educational" />
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="Home Icon"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:contentDescription="Cart Icon"
+            android:src="@drawable/basket" />
+
+    </RelativeLayout>
+</RelativeLayout>

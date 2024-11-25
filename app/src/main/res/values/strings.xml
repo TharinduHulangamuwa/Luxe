@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LuxeVista</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="login_info_text">Please login with your information</string>
+    <string name="register_info_text">Create a new account</string>
+    <string name="username_label">Username</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="register_link_text"><u>Register</u></string>
+    <string name="login_link_text"><u>Login</u></string>
+    <string name="logo_desc">App Logo</string>
+    <string name="slogan_text">Where Luxury Meets the Ocean Breeze</string>
+</resources>
