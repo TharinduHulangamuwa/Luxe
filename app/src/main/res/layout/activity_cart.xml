@@ -1,90 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:id="@+id/main"
-    tools:context=".CartActivity">
+    android:padding="16dp">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/roomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Rooms"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_below="@id/roomTitle"
+        android:scrollbars="none">
 
-        <!-- Cart Label and Icon -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="20dp"
-            android:padding="20dp"
-            android:background="@drawable/blue_background">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/cart_label"
-                android:layout_width="wrap_content"
+            <!-- Room 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:text="Booking"
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                cardview:cardCornerRadius="8dp">
 
-            <ImageView
-                android:id="@+id/cart_icon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/basket" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/orders_button"
-                android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/roomTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deluxe Room"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/roomImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/deluxe_room_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spacious room with a stunning view."
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Room 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:background="@color/material_dynamic_primary80"
-                android:text="Reserve"
-                android:textColor="@android:color/black" />
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                cardview:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/room2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/roomTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Standard Room"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/roomImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/standard_room_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cozy room perfect for a comfortable stay."
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Room 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                cardview:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                cardview:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/room3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/roomTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suite Room"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/roomImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/suite_room_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luxurious suite with premium amenities."
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
-
-        <!-- Items List -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/cartRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp"
-            tools:itemCount="2" />
-
-        <!-- Total Price TextView -->
-        <TextView
-            android:id="@+id/totalPrice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Total Price: $0.00"
-            android:textSize="18sp"
-            android:textColor="@android:color/black"
-            android:gravity="end"
-            android:padding="10dp"/>
-
-        <!-- Checkout Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/checkoutButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/checkout_background_selector"
-            android:text="Checkout"
-            android:textColor="@android:color/black"/>
-
-
-
-
-    </LinearLayout>
+    </ScrollView>
 
     <!-- Bottom Navigation -->
     <RelativeLayout
@@ -92,12 +157,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:padding="16dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/blue_background">
+        android:background="@drawable/blue_background"
+        android:gravity="center"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/bookIcon"
@@ -120,10 +185,9 @@
             android:id="@+id/cartIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParent Right="true"
             android:layout_marginRight="32dp"
             android:contentDescription="Cart Icon"
             android:src="@drawable/basket" />
-
     </RelativeLayout>
 </RelativeLayout>

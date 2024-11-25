@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/aboutUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About LuxeVista Resort"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/aboutUsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutUsTitle"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to LuxeVista Resort, where luxury meets comfort..."
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/resortImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/aboutUsDescription"
+            android:src="@drawable/resort_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/amenitiesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resortImage"
+            android:layout_marginTop="10dp"
+            android:text="Amenities"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/amenitiesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amenitiesTitle"
+            android:text="• Pool\n• Gym\n• Restaurant\n• Conference Halls"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+</ScrollView>

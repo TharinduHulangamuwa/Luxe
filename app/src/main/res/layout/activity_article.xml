@@ -66,10 +66,10 @@
                         android:id="@+id/title1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="Why Choose LuxeVista Resort for Your Next Getaway? "
+                        android:text="Why Regular Health Checks are Important"
+                        android:textStyle="bold"
                         android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:layout_marginBottom="8dp" />
 
                     <ImageView
                         android:id="@+id/image1"
@@ -77,12 +77,15 @@
                         android:layout_height="200dp"
                         android:layout_marginBottom="8dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/hotel1"/>
+                        android:src="@drawable/dog1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="At LuxeVista, every room is designed to exude elegance and comfort. From spacious ocean-view suites to cozy deluxe rooms, each space is thoughtfully curated with premium furnishings and modern amenities. With options for private balconies, spa-like bathrooms, and personalized room services, LuxeVista ensures your stay feels like a home away from home.  " />
+                        android:text="A comprehensive health check for your dog is essential for maintaining their overall well-being. Regular visits to the veterinarian allow for early detection of potential health issues and ensure that your pet remains in peak condition. These health checks usually begin with a general examination, where the vet assesses your dog’s overall appearance, including their weight, body condition, and coat quality. Observations during this stage can provide important clues about your dog's health, such as signs of obesity or skin conditions.&#10;&#9;
+                        During the physical examination, the vet will also check vital signs, including heart rate, respiratory rate, and temperature. They will listen to your dog’s heart and lungs to detect any abnormal sounds or rhythms that might indicate underlying health problems. Additionally, a thorough inspection of your dog’s eyes, ears, nose, and mouth is conducted to identify signs of infections or other issues. The vet will examine the teeth for dental health, checking for signs of periodontal disease or tooth decay.&#10;&#9;
+                        A significant part of the health check involves evaluating your dog’s musculoskeletal system. The vet will assess your dog's joints and limbs for any signs of pain or stiffness, which could indicate conditions like arthritis. Palpating the abdomen helps in detecting any unusual masses or discomfort that could point to internal issues.
+                        A significant part of the health check involves evaluating your dog’s musculoskeletal system. The vet will assess your dog's joints and limbs for any signs of pain or stiffness, which could indicate conditions like arthritis. Palpating the abdomen helps in detecting any unusual masses or discomfort that could point to internal issues."/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -105,23 +108,26 @@
                         android:id="@+id/title2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="1. A Paradise by the Ocean "
+                        android:text="Different Dog Breeds"
+                        android:textStyle="bold"
                         android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:layout_marginBottom="8dp" />
 
                     <ImageView
                         android:id="@+id/image2"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/hotel3"
+                        android:src="@drawable/dog2"
                         android:scaleType="centerCrop" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Imagine waking up to the soothing sound of waves and enjoying uninterrupted views of the ocean from your private suite. LuxeVista Resort is situated on one of the most picturesque beaches, providing guests with direct access to golden sands and crystal-clear waters. Whether you’re lounging by the shore or indulging in water sports, LuxeVista’s prime location makes it a haven for beach lovers.  " />
+                        android:text="Labrador Retriever&#10;&#10;
+                        One of the most beloved breeds, the Labrador Retriever is known for its friendly and outgoing nature. Labradors are highly intelligent and versatile dogs, often used as service dogs, in search and rescue, and as loyal family pets. Their high energy levels make them great companions for active families. They have a short, dense coat that requires regular brushing to manage shedding.&#10;&#10;German Shepherd&#10;&#10;
+                        German Shepherds are renowned for their intelligence and versatility. They are frequently employed in police and military roles due to their keen sense of smell and trainability. German Shepherds are loyal, protective, and excellent family dogs, although they require ample exercise and mental stimulation. Their double coat can shed heavily, particularly during seasonal changes.&#10;&#10;French Bulldog&#10;&#10;
+                        With their distinctive bat-like ears and compact size, French Bulldogs are a popular choice for urban dwellers. They are known for their playful and affectionate nature. French Bulldogs have a short coat that is relatively low-maintenance, but they can be prone to certain health issues due to their brachycephalic (flat-faced) structure. They are well-suited to apartment living and moderate exercise." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -144,23 +150,25 @@
                         android:id="@+id/title3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="2. Luxurious Accommodations"
+                        android:text="Navigating the World of Dog Food"
+                        android:textStyle="bold"
                         android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:layout_marginBottom="8dp" />
 
                     <ImageView
                         android:id="@+id/image3"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/hotel4"
+                        android:src="@drawable/dog3"
                         android:scaleType="centerCrop" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="At LuxeVista, every room is designed to exude elegance and comfort. From spacious ocean-view suites to cozy deluxe rooms, each space is thoughtfully curated with premium furnishings and modern amenities. With options for private balconies, spa-like bathrooms, and personalized room services, LuxeVista ensures your stay feels like a home away from home.  " />
+                        android:text="
+                        Choosing the right food for your dog involves understanding their unique nutritional needs and recognizing the quality of ingredients. A well-balanced diet for dogs should primarily feature high-quality protein sources, such as chicken, beef, or fish, along with a mix of vegetables, fruits, and whole grains. These ingredients ensure that your dog receives essential nutrients like amino acids, vitamins, and minerals necessary for optimal health. It's important to scrutinize the ingredient list and avoid foods with excessive fillers, artificial preservatives, or by-products, as these can offer little nutritional benefit and may lead to health problems over time.&#10;&#10;
+                        Additionally, dogs have different dietary requirements based on their life stage, size, and health condition. For instance, puppies require higher levels of protein and calories to support their rapid growth, while senior dogs may benefit from diets that support joint health and manage weight. Special dietary needs may also arise for dogs with allergies or medical conditions, such as diabetes or kidney disease. Consulting with your veterinarian can provide valuable insights tailored to your dog's specific needs, helping you choose the best food to promote their well-being and longevity." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
