@@ -19,4 +19,6 @@
     <string name="login_link_text"><u>Login</u></string>
     <string name="logo_desc">App Logo</string>
     <string name="slogan_text">Where Luxury Meets the Ocean Breeze</string>
+    <string name="login_text">Login</string>
+
 </resources>

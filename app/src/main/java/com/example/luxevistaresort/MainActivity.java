@@ -52,8 +52,10 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        // Correct method call
+        // Correct method call without space
         mAuth.createUser WithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, task -> {
+            .addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
                 // Sign up success
                 FirebaseUser  user = mAuth.getCurrentUser ();

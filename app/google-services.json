@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:312362329423:android:82fd9c6a3bfebeff40113a",
+        "mobilesdk_app_id": "1:312362329423:android:0a67151319fe9e0f40113a",
         "android_client_info": {
-          "package_name": "com.example.luxe"
+          "package_name": "com.example.luxevistaresort"
         }
       },
       "oauth_client": [],
