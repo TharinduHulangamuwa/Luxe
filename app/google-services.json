@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "862874385921",
-    "project_id": "dognutritionapp-7fa12",
-    "storage_bucket": "dognutritionapp-7fa12.appspot.com"
+    "project_number": "312362329423",
+    "project_id": "luxe-1a8a3",
+    "storage_bucket": "luxe-1a8a3.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:862874385921:android:7096f1e4822fb4c61e8a00",
+        "mobilesdk_app_id": "1:312362329423:android:82fd9c6a3bfebeff40113a",
         "android_client_info": {
-          "package_name": "com.example.mypupcare"
+          "package_name": "com.example.luxe"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAMooqsqCBhGG6CbSOrk3srM2uv6LCxs2A"
+          "current_key": "AIzaSyBtLJunTZ6z71b_clCTxu4NjFdjouvuEfU"
         }
       ],
       "services": {

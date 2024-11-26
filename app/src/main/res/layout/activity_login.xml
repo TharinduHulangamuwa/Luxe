@@ -124,7 +124,7 @@
                     android:textSize="16sp"
                     android:clickable="true"
                     android:focusable="false"
-                    android :onClick="onRegisterClick"
+                    android:onClick="onRegisterClick"
                     android:text="@string/register_link_text"
                     android:padding="20dp"
                     android:minHeight="48dp"/>
